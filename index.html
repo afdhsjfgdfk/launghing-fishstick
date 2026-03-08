@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Niculita Leonid | Portfolio</title>
+    <style>
+        :root {
+            --primary-color: #503e56;
+            --accent-color: #ebb90f;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --bg-light: #f4f4f4;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-light);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            color: var(--text-light);
+            padding: 2rem;
+            text-align: center;
+            border-bottom: 5px solid var(--accent-color);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        header p {
+            margin: 0.5rem 0 0;
+            font-size: 1.2rem;
+            color: var(--accent-color);
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 2rem;
+            padding: 0 1rem;
+        }
+
+        aside {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            height: fit-content;
+        }
+
+        aside h2 {
+            color: var(--primary-color);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .contact-info p {
+            margin: 0.8rem 0;
+            font-size: 0.9rem;
+        }
+
+        .contact-info strong {
+            display: block;
+            color: var(--primary-color);
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        section {
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        section h2 {
+            color: var(--primary-color);
+            margin-top: 0;
+            border-left: 5px solid var(--accent-color);
+            padding-left: 1rem;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .experience-item:last-child {
+            margin-bottom: 0;
+        }
+
+        .date {
+            font-weight: bold;
+            color: var(--accent-color);
+            background-color: var(--primary-color);
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            display: inline-block;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item h3 {
+            margin: 0.5rem 0;
+            color: var(--primary-color);
+        }
+
+        .experience-item h4 {
+            margin: 0;
+            font-style: italic;
+            color: #666;
+        }
+
+        .cert-link {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 0.5rem;
+        }
+
+        .cert-link:hover {
+            color: var(--accent-color);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-top: 0.5rem;
+        }
+
+        .tag {
+            background-color: #eee;
+            padding: 4px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Niculita Leonid</h1>
+        <p>Ambitious Economics Student & Erasmus+ Aspirant</p>
+    </header>
+
+    <div class="container">
+        <aside>
+            <section class="contact-info">
+                <h2>Contact Info</h2>
+                <p><strong>Email</strong> niculitaleonid0@gmail.com</p>
+                <p><strong>Phone</strong> +373 76892048</p>
+                <p><strong>Address</strong> Valentina Telescova 5, Branza, Cahul, MD-5312</p>
+                <p><strong>Birthday</strong> May 6, 2005</p>
+            </section>
+
+            <section>
+                <h2>Languages</h2>
+                <div class="tags">
+                    <span class="tag">Romanian</span>
+                    <span class="tag">English</span>
+                </div>
+            </section>
+
+            <section>
+                <h2>Hobbies</h2>
+                <div class="tags">
+                    <span class="tag">Traveling</span>
+                    <span class="tag">Sports</span>
+                    <span class="tag">Reading</span>
+                </div>
+            </section>
+        </aside>
+
+        <main>
+            <section id="education">
+                <h2>Education</h2>
+                
+                <div class="experience-item">
+                    <span class="date">Sep 2024 - Present</span>
+                    <h3>Bachelor of Economics</h3>
+                    <h4>Bogdan Petriceicu Hasdeu State University of Cahul</h4>
+                    <p>Focusing on economic theory, business fundamentals, and market analysis. Developing strong analytical and problem-solving skills with a keen interest in international mobility.</p>
+                </div>
+
+                <div class="experience-item">
+                    <span class="date">Sep 2020 - Jun 2024</span>
+                    <h3>High School Diploma</h3>
+                    <h4>"Academician Ion Bostan" Theoretical Lyceum</h4>
+                    <p>Focused on humanities and social sciences. Developed analytical and organizational skills through academic work and extracurricular environmental/sports programs.</p>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2>Certifications</h2>
+                
+                <div class="experience-item">
+                    <span class="date">Jan 2025</span>
+                    <h3>English for Business and Entrepreneurship</h3>
+                    <h4>Coursera</h4>
+                    <p>Focused on global business environment concepts, market analysis, and professional pitching.</p>
+                    <a href="https://www.coursera.org/learn/business" class="cert-link" target="_blank">View Certificate &rarr;</a>
+                </div>
+
+                <div class="experience-item">
+                    <span class="date">Nov 2024</span>
+                    <h3>English for Career Development</h3>
+                    <h4>Coursera</h4>
+                    <p>Enhanced professional communication, including resume writing, interviewing, and networking.</p>
+                    <a href="https://www.coursera.org/learn/careerdevelopment" class="cert-link" target="_blank">View Certificate &rarr;</a>
+                </div>
+            </section>
+
+            <section id="motivation">
+                <h2>Erasmus+ Motivation</h2>
+                <p>My primary goal is to gain international academic experience and personal growth. I am particularly drawn to Turkey for its rich cultural heritage and dynamic student life. I look forward to developing global economic perspectives and becoming more adaptable in multicultural environments.</p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
