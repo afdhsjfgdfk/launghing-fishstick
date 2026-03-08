@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
         :root {
-            --primary-color: #503e56;
-            --accent-color: #ebb90f;
+            --primary-color: #0a2b49;
+            --accent-color: #446d92;
+            --light-accent: #98b1c8;
+            --secondary-blue: #24496b;
             --text-light: #ffffff;
             --text-dark: #333333;
             --bg-light: #f8f9fa;
@@ -33,7 +35,7 @@
             color: var(--text-light);
             padding: 3rem 1rem;
             text-align: center;
-            border-bottom: 5px solid var(--accent-color);
+            border-bottom: 5px solid var(--light-accent);
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -45,7 +47,7 @@
             width: 160px;
             height: 160px;
             border-radius: 50%;
-            border: 5px solid var(--accent-color);
+            border: 5px solid var(--light-accent);
             object-fit: cover;
             background-color: white;
             box-shadow: var(--shadow);
@@ -67,7 +69,7 @@
             margin: 0;
             font-size: 1.3rem;
             font-weight: 300;
-            color: var(--accent-color);
+            color: var(--light-accent);
         }
 
         .header-actions {
@@ -89,23 +91,24 @@
         }
 
         .btn-primary {
-            background-color: var(--accent-color);
+            background-color: var(--light-accent);
             color: var(--primary-color);
         }
 
         .btn-primary:hover {
-            background-color: #d4a70d;
+            background-color: var(--accent-color);
+            color: white;
             transform: translateY(-3px);
-            box-shadow: 0 5px 15px rgba(235, 185, 15, 0.4);
+            box-shadow: 0 5px 15px rgba(152, 177, 200, 0.4);
         }
 
         .btn-outline {
-            border: 2px solid var(--accent-color);
-            color: var(--accent-color);
+            border: 2px solid var(--light-accent);
+            color: var(--light-accent);
         }
 
         .btn-outline:hover {
-            background-color: var(--accent-color);
+            background-color: var(--light-accent);
             color: var(--primary-color);
             transform: translateY(-3px);
         }
@@ -144,7 +147,7 @@
             display: flex;
             align-items: center;
             gap: 0.8rem;
-            border-bottom: 2px solid var(--accent-color);
+            border-bottom: 2px solid var(--light-accent);
             padding-bottom: 0.5rem;
         }
 
@@ -157,7 +160,7 @@
         }
 
         .contact-info i {
-            color: var(--accent-color);
+            color: var(--secondary-blue);
             width: 20px;
         }
 
@@ -181,7 +184,7 @@
             top: 0;
             width: 13px;
             height: 13px;
-            background-color: var(--accent-color);
+            background-color: var(--secondary-blue);
             border-radius: 50%;
         }
 
@@ -206,7 +209,7 @@
         }
 
         .cert-link {
-            color: var(--primary-color);
+            color: var(--secondary-blue);
             text-decoration: none;
             font-weight: 600;
             font-size: 0.9rem;
@@ -240,9 +243,9 @@
         }
 
         .skill-pill:hover {
-            background-color: var(--primary-color);
+            background-color: var(--secondary-blue);
             color: var(--text-light);
-            border-color: var(--accent-color);
+            border-color: var(--light-accent);
         }
 
         .tags {
@@ -252,7 +255,7 @@
         }
 
         .tag {
-            background-color: rgba(80, 62, 86, 0.05);
+            background-color: rgba(10, 43, 73, 0.05);
             color: var(--primary-color);
             padding: 0.4rem 1rem;
             border-radius: 4px;
